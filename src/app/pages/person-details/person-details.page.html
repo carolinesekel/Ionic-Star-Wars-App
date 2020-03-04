@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/tabs/people"></ion-back-button>
+      </ion-buttons>
+      <ion-title>{{ person?.name }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding">
+      <ion-card *ngIf="person" class="person-card">
+          <ion-card-content>
+              Height: {{ person.height }}
+          </ion-card-content>
+          <ion-card-content>
+              Mass: {{ person.mass }}
+          </ion-card-content>
+          <ion-card-content>
+              Hair color: {{ person.hair_color }}
+          </ion-card-content>
+          <ion-card-content>
+              Skin color: {{ person.skin_color }}
+          </ion-card-content>
+          <ion-card-content>
+              Eye color: {{ person.eye_color }}
+          </ion-card-content>
+          <ion-card-content>
+              Birth year: {{ person.birth_year }}
+          </ion-card-content>
+          <ion-card-content>
+              Gender: {{ person.gender }}
+          </ion-card-content>
+        </ion-card>
+  </ion-content>
+  
